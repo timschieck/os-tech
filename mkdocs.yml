@@ -1,0 +1,47 @@
+site_name: OS Tech
+theme: 
+  name: material
+  palette:
+    # - primary: blue
+
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: green
+
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    logo: fontawesome/solid/robot
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - search.highlight
+    - search.share
+    - toc.follow
+repo_url: https://github.com/timschieck/os-tech
+site_url: https://timschieck.github.com/os-tech
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+markdown_extensions:
+  - footnotes
+plugins:
+  - search
+  # - tags:
+      # tags_file: tags/themes.md
+extra:
+  generator: false
